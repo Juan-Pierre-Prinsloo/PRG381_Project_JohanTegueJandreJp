@@ -14,9 +14,10 @@ public class OtherEvent implements Event {
     String Desert;
 
 	@Override
-	public void getEventDetails() {
+	public String[] getEventDetails() {
 		
         Scanner scn = new Scanner(System.in);
+        String[] otherDeets = new String[7];
         System.out.println("What type of event is it?");
         eventType = scn.nextLine();
 
@@ -42,5 +43,7 @@ public class OtherEvent implements Event {
         Desert = scn.nextLine();
 
         scn.close();
+
+        return otherDeets;
     }
 }

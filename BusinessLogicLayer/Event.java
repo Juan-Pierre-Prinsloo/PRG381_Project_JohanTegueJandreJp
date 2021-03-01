@@ -6,6 +6,6 @@ package BusinessLogicLayer;
 public interface Event {
 
    //Jandre Event Class
-    void getEventDetails();
+    String[] getEventDetails();
 
 }

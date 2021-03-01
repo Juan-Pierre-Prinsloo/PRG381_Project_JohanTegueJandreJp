@@ -8,6 +8,7 @@ import java.util.*;
 import BusinessLogicLayer.*;
 
 public class DAClientDetails {
+    
     public List<Client> getClientDetails() throws IOException {
 
        

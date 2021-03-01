@@ -15,9 +15,11 @@ public class Wedding implements Event{
 
 
 	@Override
-	public void getEventDetails() {
+	public String[] getEventDetails() {
 		
         Scanner scn = new Scanner(System.in);
+        String[] weddingDeets = new String[7];
+
         System.out.println("When(Date & Time)");
         eventDateandTime = scn.nextLine();
 
@@ -38,7 +40,9 @@ public class Wedding implements Event{
         System.out.println("What would you like for desert?");
         Desert = scn.nextLine();
 
-        scn.close();;
+        scn.close();
+
+        return weddingDeets;
 
 		
 	}

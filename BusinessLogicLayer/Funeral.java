@@ -17,9 +17,11 @@ public class Funeral implements  Event{
     
 
 	@Override
-	public void getEventDetails() {
+	public String[] getEventDetails() {
 		
         Scanner scn = new Scanner(System.in);
+        String[] funeralDeets = new String[5];
+
         System.out.println("When(Date & Time)");
         eventDateandTime = scn.nextLine();
 
@@ -35,6 +37,8 @@ public class Funeral implements  Event{
         FuneralBouquet = scn.nextLine();
 
         scn.close();
+
+        return funeralDeets;
     }
 }
 

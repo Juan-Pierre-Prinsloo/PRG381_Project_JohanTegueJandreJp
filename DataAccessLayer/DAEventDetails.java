@@ -1,5 +1,10 @@
 package DataAccessLayer;
 
 public class DAEventDetails {
-    //5
+
+    public void DAEventDetail(String[] stArr){
+
+        
+    }
+    
 }
