@@ -5,6 +5,6 @@ package BusinessLogicLayer;
 
 public interface Event {
 
-   //This is an event
+   //This is my event comment
 
 }
