@@ -5,5 +5,7 @@ package BusinessLogicLayer;
 
 public interface Event {
 
-   //Jandre Update
+   //Jandre Event Class
+    void getEventDetails();
+
 }
