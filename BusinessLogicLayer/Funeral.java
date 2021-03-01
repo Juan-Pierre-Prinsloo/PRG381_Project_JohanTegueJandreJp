@@ -16,8 +16,6 @@ public class Funeral implements  Event{
     String FuneralBouquet;
     
 
-
-
 	@Override
 	public void getEventDetails() {
 		
