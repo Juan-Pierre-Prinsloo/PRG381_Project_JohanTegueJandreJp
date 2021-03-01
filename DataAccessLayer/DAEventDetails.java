@@ -21,7 +21,8 @@ public class DAEventDetails {
         } else if(stArr[0] == "BirthDay") {
             
         }else if (stArr[0] == "Funeral"){
-
+            String CombinedFuneral = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", FuneralBouquet: "+ stArr[4] +" \n";
+            bwriter.write(CombinedFuneral);
         }else {
 
 
