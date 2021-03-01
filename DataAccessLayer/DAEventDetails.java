@@ -3,6 +3,8 @@ import java.io.*;
 
 public class DAEventDetails {
 
+    //Jandre DAEventDetails Update
+
     public void DAEventDetail(String[] stArr) throws IOException {
 
         
@@ -19,14 +21,15 @@ public class DAEventDetails {
             bwriter.write(CombinedWedding);
 
         } else if(stArr[0] == "BirthDay") {
-
-            String combinedBirthday = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] +" \n";
-            bwriter.write(combinedBirthday);
             
         }else if (stArr[0] == "Funeral"){
-            String CombinedFuneral = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", FuneralBouquet: "+ stArr[4] +" \n";
-            bwriter.write(CombinedFuneral);
+
         }else {
+            String CombinedOtherEvent = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] +" \n";
+            bwriter.write(CombinedOtherEvent);
+
+
+        }
 
 
         }
