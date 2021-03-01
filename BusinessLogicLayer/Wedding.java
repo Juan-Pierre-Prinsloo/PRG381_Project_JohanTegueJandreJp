@@ -12,7 +12,7 @@ public class Wedding implements Event{
     //menu
     
     String starters;
-    String Main;
+    String mainCourse;
     String Desert;
 
 
@@ -50,8 +50,8 @@ public class Wedding implements Event{
 
 
         System.out.println("What would you like for the main course?");
-        Main = scn.nextLine();
-        weddingDeets[5] = Main;
+        mainCourse = scn.nextLine();
+        weddingDeets[5] = mainCourse;
 
 
         System.out.println("What would you like for desert?");
