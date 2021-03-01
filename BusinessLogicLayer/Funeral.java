@@ -38,6 +38,12 @@ public class Funeral implements  Event{
 
         scn.close();
 
+        funeralDeets[0] = eventType;
+        funeralDeets[1] = eventDateandTime;
+        funeralDeets[2] = eventAddress;
+        funeralDeets[3] = String.valueOf(eventNumPeople);
+        funeralDeets[4] = FuneralBouquet;
+
         return funeralDeets;
     }
 }
