@@ -15,10 +15,13 @@ public class BirthDay implements Event{
     String Desert;
 
 	@Override
-	public void getEventDetails() 
+	public String[] getEventDetails() 
     {
 		
         Scanner scn = new Scanner(System.in);
+        String[] birthdayDeets = new String[7];
+
+
         System.out.println("When(Date & Time)");
         eventDateandTime = scn.nextLine();
 
@@ -44,5 +47,9 @@ public class BirthDay implements Event{
         Desert = scn.nextLine();
 
         scn.close();
+
+        return birthdayDeets;
+
+       
     }
 }
