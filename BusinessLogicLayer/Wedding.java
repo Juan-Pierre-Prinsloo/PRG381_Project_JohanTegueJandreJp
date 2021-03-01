@@ -1,7 +1,7 @@
 package BusinessLogicLayer;
 import java.util.*;
 
-import jdk.javadoc.internal.tool.Main;
+
 
 public class Wedding implements Event{
     String eventType = "Wedding";
