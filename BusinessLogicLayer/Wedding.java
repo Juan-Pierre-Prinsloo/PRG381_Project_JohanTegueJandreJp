@@ -20,8 +20,11 @@ public class Wedding implements Event{
         Scanner scn = new Scanner(System.in);
         String[] weddingDeets = new String[7];
 
+        weddingDeets[0] = eventType;
+
         System.out.println("When(Date & Time)");
         eventDateandTime = scn.nextLine();
+        weddingDeets[1] = eventDateandTime;
 
         System.out.println("WhereAddress)");
         eventAddress = scn.nextLine();
