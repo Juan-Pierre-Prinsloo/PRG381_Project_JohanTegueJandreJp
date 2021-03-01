@@ -26,6 +26,8 @@ public class Wedding implements Event{
         String[] weddingDeets = new String[7];
         weddingDeets[0]= eventType;
 
+        weddingDeets[0] = eventType;
+
         System.out.println("When(Date & Time)");
         eventDateandTime = scn.nextLine();
         weddingDeets[1] = eventDateandTime;
