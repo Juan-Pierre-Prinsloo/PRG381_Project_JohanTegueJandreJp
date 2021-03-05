@@ -5,7 +5,7 @@ import java.util.*;
 
 import BusinessLogicLayer.LoginFactory;
 
-public class ClientView {
+public class Clientview {
     public static void main(String[] args) throws IOException {
 
         LoginFactory factory = new LoginFactory();
