@@ -14,9 +14,7 @@ public class Clientview {
         //boolean flag = true;
 
         Scanner scner = new Scanner(System.in);
-        
-       
-
+ 
         int eventChoice = 0;
         int choice = 0;
 
@@ -24,25 +22,29 @@ public class Clientview {
         while (true) {
             
             /*displaySignInMenu();
-    
             choice = extracted(scner);
-            
             factory.GetEntry(choice);
-
             displayPlanMenu();
-
             eventChoice = extracted(scner);
-            
-            planning.PlanMenu(eventChoice);
-
-
-            if (choice == 1) {
-               
-               
-
-
+            planning.PlanMenu(eventChoice);if (choice == 1) {
+              
             }*/
-    
+            
+            displaySignInMenu();
+            choice = scner.nextInt();
+
+            if (choice!=1) 
+            {
+                factory.GetEntry(choice);
+            } 
+             else 
+             {
+                factory.GetEntry(choice);
+                displayPlanMenu();
+                eventChoice = scner.nextInt();
+                planning.PlanMenu(eventChoice);
+            }
+
         }
     }
 
