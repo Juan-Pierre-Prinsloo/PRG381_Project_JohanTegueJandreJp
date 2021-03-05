@@ -15,7 +15,8 @@ public class LoginFactory {
 
     PlanEventFactory planning = new PlanEventFactory();
     ClientView cl = new ClientView();
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    Scanner scn = new Scanner(System.in);
+    //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     
     /*BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
     string str = br.readLine(); //for string input
@@ -32,8 +33,8 @@ public class LoginFactory {
                 case 1:
 
                     daclientdetails.getClientDetails();
-                    eventChoice = Integer.parseInt(br.readLine());
-                    ClientView.displayPlanMenu();
+                    eventChoice = scn.nextInt();
+                    cl.displayPlanMenu();
 
                     planning.PlanMenu(eventChoice);
                     

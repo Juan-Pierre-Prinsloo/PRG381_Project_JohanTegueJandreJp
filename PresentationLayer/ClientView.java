@@ -8,6 +8,8 @@ import BusinessLogicLayer.PlanEventFactory;
 
 public class ClientView{
 
+    
+
 
     public static void main(String[] args) throws IOException {
 
@@ -17,6 +19,7 @@ public class ClientView{
 
         //Scanner scner = new Scanner(System.in);
         Scanner scn = new Scanner(System.in);
+        
  
         int eventChoice = 0;
         int choice = 0;
@@ -32,11 +35,14 @@ public class ClientView{
             planning.PlanMenu(eventChoice);if (choice == 1) {
               
             }*/
+
+            InputStreamReader sr = new InputStreamReader(System.in);
+            BufferedReader br = new BufferedReader(sr);
             
             displaySignInMenu();
             choice = scn.nextInt();
 
-            if (choice != 2) 
+            if (choice != 1) 
             {
                 factory.GetEntry(choice);
 
@@ -50,7 +56,7 @@ public class ClientView{
                 factory.GetEntry(choice);
                 
             }
-            scn.close();
+            //scn.close();
 
         }
     }
