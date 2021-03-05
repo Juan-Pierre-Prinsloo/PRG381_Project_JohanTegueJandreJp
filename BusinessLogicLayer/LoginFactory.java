@@ -1,20 +1,28 @@
 package BusinessLogicLayer;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 import DataAccessLayer.DAClientDetails;
-import PresentationLayer.Clientview;
+//import PresentationLayer.Clientview;
+import PresentationLayer.ClientView;
 
 public class LoginFactory {
     Client client = new Client();
     DAClientDetails daclientdetails = new DAClientDetails();
 
     PlanEventFactory planning = new PlanEventFactory();
-    Clientview cl = new Clientview();
-    Scanner scner = new Scanner(System.in);  
+    ClientView cl = new ClientView();
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    
+    /*BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
+    string str = br.readLine(); //for string input
 
-    int eventChoice = 0;
+    int i = Integer.parseInt(br.readLine()); // for Integer Input*/     
+
+    int eventChoice =  0; 
    
 
     public Client GetEntry(int SignUp) throws IOException {
@@ -22,9 +30,10 @@ public class LoginFactory {
        
             switch (SignUp) {
                 case 1:
+
                     daclientdetails.getClientDetails();
-                    eventChoice = scner.nextInt();
-                    cl.displayPlanMenu();
+                    eventChoice = Integer.parseInt(br.readLine());
+                    ClientView.displayPlanMenu();
 
                     planning.PlanMenu(eventChoice);
                     

@@ -1,19 +1,22 @@
 package PresentationLayer;
 
 import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 import BusinessLogicLayer.LoginFactory;
 import BusinessLogicLayer.PlanEventFactory;
 
-public class Clientview {
+public class ClientView{
+
+
     public static void main(String[] args) throws IOException {
 
         LoginFactory factory = new LoginFactory();
         PlanEventFactory planning = new PlanEventFactory();
         //boolean flag = true;
 
-        Scanner scner = new Scanner(System.in);
+        //Scanner scner = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
  
         int eventChoice = 0;
         int choice = 0;
@@ -31,19 +34,23 @@ public class Clientview {
             }*/
             
             displaySignInMenu();
-            choice = scner.nextInt();
+            choice = scn.nextInt();
 
-            if (choice!=1) 
+            if (choice != 2) 
             {
                 factory.GetEntry(choice);
+
+                displayPlanMenu();
+                eventChoice = scn.nextInt();
+
+                planning.PlanMenu(eventChoice);
             } 
              else 
              {
                 factory.GetEntry(choice);
-                displayPlanMenu();
-                eventChoice = scner.nextInt();
-                planning.PlanMenu(eventChoice);
+                
             }
+            scn.close();
 
         }
     }
