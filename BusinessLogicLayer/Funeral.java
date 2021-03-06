@@ -5,8 +5,6 @@ import java.util.*;
 
 public class Funeral implements  Event{
 
-    //Jandre Funeral class
-
     String eventType = "Funeral";
     String eventDateandTime;
     String eventAddress;
