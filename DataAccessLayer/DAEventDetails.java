@@ -11,7 +11,6 @@ public class DAEventDetails {
         FileWriter fileWriter = new FileWriter(path,true);
         BufferedWriter bwriter = new BufferedWriter(fileWriter);
 
-
         if (stArr[0] == "Wedding") {
 
             String CombinedWedding = "Event Type: " + stArr[0] + ", Date: " + stArr[1] + ", Address: " + stArr[2] + ", Amount of People:" + stArr[3] +", Menu: Starters:"+ stArr[4] +", Main Course: " + stArr[5] +", Desert: " + stArr[6] + ", Price: " +  stArr[7] + ", Booking Number: " + stArr[8] + " \n";
@@ -35,10 +34,6 @@ public class DAEventDetails {
         }
 
         bwriter.close();
-
-       
-
-
         
     }
     

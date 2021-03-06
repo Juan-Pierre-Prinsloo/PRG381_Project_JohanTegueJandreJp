@@ -25,16 +25,7 @@ public class ClientView{
 
 
         while (true) {
-            
-            /*displaySignInMenu();
-            choice = extracted(scner);
-            factory.GetEntry(choice);
-            displayPlanMenu();
-            eventChoice = extracted(scner);
-            planning.PlanMenu(eventChoice);if (choice == 1) {
-              
-            }*/
-
+           
             InputStreamReader sr = new InputStreamReader(System.in);
             BufferedReader br = new BufferedReader(sr);
             

@@ -4,6 +4,7 @@ import java.util.*;
 import PresentationLayer.ClientView;
 
 public class Wedding implements Event{
+    boolean validDate = true;
     String eventType = "Wedding";
     String eventDateandTime;
     String eventAddress;
@@ -11,65 +12,71 @@ public class Wedding implements Event{
     int bookingNum = 0;
     double price = 70000;
     
-    
     //menu
     String starters;
     String mainCourse;
     String Desert;
 
-
-
 	@Override
 	public String[] getEventDetails() {
-		
         Scanner scn = new Scanner(System.in);
         String[] weddingDeets = new String[9];
 
-        weddingDeets[0] = eventType;
-
         System.out.println("When(Date & Time)");
         eventDateandTime = scn.nextLine();
-        weddingDeets[1] = eventDateandTime;
 
         System.out.println("WhereAddress)");
         eventAddress = scn.nextLine();
-        weddingDeets[2] = eventAddress;
 
         System.out.println("How many people?");
         eventNumPeople = scn.nextInt();
         if (eventNumPeople > 40) {
             price = price - (price * 0.15);
         }
-        weddingDeets[3] = String.valueOf(eventNumPeople);
-
 
         System.out.println("==================================Menu:=============================");
         System.out.println("What starters would you like?");
         starters = scn.nextLine();
-        weddingDeets[4] = starters;
 
         System.out.println("What would you like for the main course?");
         mainCourse = scn.nextLine();
-        weddingDeets[5] = mainCourse;
 
         System.out.println("What would you like for desert?");
         Desert = scn.nextLine();
-        weddingDeets[6] = Desert;
-
-        weddingDeets[7] = String.valueOf(price);
 
         bookingNum = ClientView.eventIncrements;
-        weddingDeets[8] = String.valueOf(bookingNum);
-        
-
-        
 
         scn.close();
 
-        return weddingDeets;
+        if (validDate == true) {
+            weddingDeets[0] = eventType;
+            weddingDeets[1] = eventDateandTime;
+            weddingDeets[2] = eventAddress;
+            weddingDeets[3] = String.valueOf(eventNumPeople);
+            weddingDeets[4] = starters;
+            weddingDeets[5] = mainCourse;
+            weddingDeets[6] = Desert;
+            weddingDeets[7] = String.valueOf(price);
+            bookingNum = ClientView.eventIncrements;
+            weddingDeets[8] = String.valueOf(bookingNum);
+        } else {
+            System.out.println("An event has already been scheduled for that day");
+        }
 
-		
+        return weddingDeets;
 	}
+
+    @Override
+    public void validateDate(){
+        Scanner sc  = new Scanner(new File("EventDetails.txt"));
+
+        while(sc.hasNext()){
+            String[] line = sc.nextLine().split(",");
+            if (eventDateandTime == line[1]) {
+                validDate = false;
+            }
+        }
+    }
 
     
 }

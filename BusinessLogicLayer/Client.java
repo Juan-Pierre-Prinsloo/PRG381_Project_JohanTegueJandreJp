@@ -1,7 +1,4 @@
 package BusinessLogicLayer;
-
-//Business layer
-
 public class Client {
 
     private String name;

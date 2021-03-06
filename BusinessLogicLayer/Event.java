@@ -4,10 +4,9 @@ package BusinessLogicLayer;
 // import java.util.*;
 
 public interface Event {
-
-   //Jandre Event Class
+    
     String[] getEventDetails();
 
-    
+    validateDate();
 
 }
