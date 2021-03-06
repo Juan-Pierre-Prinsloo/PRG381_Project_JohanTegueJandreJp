@@ -47,7 +47,8 @@ public class Funeral implements  Event{
         funeralDeets[3] = String.valueOf(eventNumPeople);
         funeralDeets[4] = FuneralBouquet;
         funeralDeets[5] = String.valueOf(price);
-
+        bookingNum = ClientView.eventIncrements;
+        funeralDeets[6] = String.valueOf(bookingNum);
 
         return funeralDeets;
     }

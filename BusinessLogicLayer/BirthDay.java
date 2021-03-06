@@ -58,7 +58,8 @@ public class BirthDay implements Event{
         birthdayDeets[6] = Desert;
 
         birthdayDeets[7] = String.valueOf(price);
-
+        bookingNum = ClientView.eventIncrements;
+        birthdayDeets[8] = String.valueOf(bookingNum);
 
         scn.close();
 

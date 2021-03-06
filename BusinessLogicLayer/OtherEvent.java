@@ -63,6 +63,8 @@ public class OtherEvent implements Event {
 
         otherDeets[7] = String.valueOf(price);
 
+        bookingNum = ClientView.eventIncrements;
+        otherDeets[8] = String.valueOf(bookingNum);
 
         scn.close();
 
