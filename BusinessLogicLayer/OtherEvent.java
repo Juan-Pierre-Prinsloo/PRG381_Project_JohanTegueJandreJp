@@ -77,7 +77,8 @@ public class OtherEvent implements Event {
 
         while(sc.hasNext()){
             String[] line = sc.nextLine().split(",");
-            if (eventDateandTime == line[1]) {
+            String[] date = line[1].split(":");
+            if (eventDateandTime == date[1]) {
                 validDate = false;
             }
         }
