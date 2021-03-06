@@ -1,3 +1,1 @@
-Event Type: BirthDay, Date: hff, Address: hgfut, Amount of People:56, Menu: Starters:uyfuy, Main Course: iuygiu, Desert: uyuy, Price: 1275.0, Booking Number: 1 
-Event Type: Funeral, Date: hff, Address: jghvhgjv, Amount of People:6544, FuneralBouquet: , Price: 5950.0, Booking Number: 1 
-Event Type: Wedding, Date: hff, Address: jhuy, Amount of People:584, Menu: Starters:, Main Course: kjn, Desert: jbjk, Price: 59500.0, Booking Number: 1 
+ 
