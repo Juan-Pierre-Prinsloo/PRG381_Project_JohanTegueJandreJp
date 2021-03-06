@@ -39,6 +39,9 @@ public class OtherEvent implements Event {
 
         System.out.println("How many people?");
         eventNumPeople = scn.nextInt();
+        if (eventNumPeople > 40) {
+            price = price - (price * 0.15);
+        }
         otherDeets[3] = String.valueOf(eventNumPeople);
 
 

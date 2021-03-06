@@ -32,6 +32,9 @@ public class Funeral implements  Event{
 
         System.out.println("How many people?");
         eventNumPeople = scn.nextInt();
+        if (eventNumPeople > 40) {
+            price = price - (price * 0.15);
+        }
 
 
         System.out.println("==================================Menu:=============================");
