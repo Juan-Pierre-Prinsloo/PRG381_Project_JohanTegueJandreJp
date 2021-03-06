@@ -1,6 +1,8 @@
 package BusinessLogicLayer;
 import java.util.*;
 
+import PresentationLayer.ClientView;
+
 public class Wedding implements Event{
     String eventType = "Wedding";
     String eventDateandTime;
@@ -55,6 +57,10 @@ public class Wedding implements Event{
         weddingDeets[6] = Desert;
 
         weddingDeets[7] = String.valueOf(price);
+
+        bookingNum = ClientView.eventIncrements;
+        weddingDeets[8] = String.valueOf(bookingNum);
+        
 
         
 

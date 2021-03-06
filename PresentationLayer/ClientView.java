@@ -8,6 +8,8 @@ import BusinessLogicLayer.PlanEventFactory;
 
 public class ClientView{
 
+    public static int eventIncrements = 0;
+
     public static void main(String[] args) throws IOException {
 
         LoginFactory factory = new LoginFactory();
@@ -41,6 +43,7 @@ public class ClientView{
 
             if (choice != 1) 
             {
+                eventIncrements++;
                 factory.GetEntry(choice);
 
                 displayPlanMenu();
