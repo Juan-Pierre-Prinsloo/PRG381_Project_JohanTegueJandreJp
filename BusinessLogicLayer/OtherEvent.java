@@ -9,7 +9,7 @@ public class OtherEvent implements Event {
     String eventDateandTime;
     String eventAddress;
     int eventNumPeople;
-    int bookingNum;
+    int bookingNum = 0;
     double price = 5000;
     
     //menu
@@ -21,7 +21,7 @@ public class OtherEvent implements Event {
 	public String[] getEventDetails() {
 		
         Scanner scn = new Scanner(System.in);
-        String[] otherDeets = new String[7];
+        String[] otherDeets = new String[9];
         System.out.println("What type of event is it?");
         eventType = scn.nextLine();
         otherDeets[0] = eventType;
@@ -60,6 +60,8 @@ public class OtherEvent implements Event {
         System.out.println("What would you like for desert?");
         Desert = scn.nextLine();
         otherDeets[6] = Desert;
+
+        otherDeets[7] = String.valueOf(price);
 
 
         scn.close();

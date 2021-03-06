@@ -14,22 +14,22 @@ public class DAEventDetails {
 
         if (stArr[0] == "Wedding") {
 
-            String CombinedWedding = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] + " \n";
+            String CombinedWedding = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] + "," +  stArr[7] + "," + stArr[8] + " \n";
             bwriter.write(CombinedWedding);
 
         } else if(stArr[0] == "BirthDay") {
 
-            String combinedBirthday = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] +" \n";
+            String combinedBirthday = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] + "," +  stArr[7] + "," + stArr[8] +" \n";
             bwriter.write(combinedBirthday);
             
         }else if (stArr[0] == "Funeral"){
 
-            String CombinedFuneral = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", FuneralBouquet: "+ stArr[4] +" \n";
+            String CombinedFuneral = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", FuneralBouquet: "+ stArr[4] + "," +  stArr[5] + "," + stArr[6] +" \n";
             bwriter.write(CombinedFuneral);
             
         }else {
 
-            String CombinedOtherEvent = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] +" \n";
+            String CombinedOtherEvent = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] + "," +  stArr[7] + "," + stArr[8] +" \n";
             bwriter.write(CombinedOtherEvent);
 
         }

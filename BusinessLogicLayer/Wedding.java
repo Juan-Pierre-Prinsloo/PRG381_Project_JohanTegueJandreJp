@@ -6,7 +6,7 @@ public class Wedding implements Event{
     String eventDateandTime;
     String eventAddress;
     int eventNumPeople;
-    int bookingNum;
+    int bookingNum = 0;
     double price = 70000;
     
     
@@ -21,7 +21,7 @@ public class Wedding implements Event{
 	public String[] getEventDetails() {
 		
         Scanner scn = new Scanner(System.in);
-        String[] weddingDeets = new String[7];
+        String[] weddingDeets = new String[9];
 
         weddingDeets[0] = eventType;
 
@@ -53,6 +53,8 @@ public class Wedding implements Event{
         System.out.println("What would you like for desert?");
         Desert = scn.nextLine();
         weddingDeets[6] = Desert;
+
+        weddingDeets[7] = String.valueOf(price);
 
         
 

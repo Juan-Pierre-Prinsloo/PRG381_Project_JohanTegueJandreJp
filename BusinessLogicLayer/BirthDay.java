@@ -8,7 +8,7 @@ public class BirthDay implements Event{
     String eventAddress;
     String eventTheme;
     int eventNumPeople;
-    int bookingNum;
+    int bookingNum = 0;
     double price = 1500;
 
     
@@ -56,6 +56,9 @@ public class BirthDay implements Event{
         System.out.println("What would you like for desert?");
         Desert = scn.nextLine();
         birthdayDeets[6] = Desert;
+
+        birthdayDeets[7] = String.valueOf(price);
+
 
         scn.close();
 

@@ -9,7 +9,7 @@ public class Funeral implements  Event{
     String eventDateandTime;
     String eventAddress;
     int eventNumPeople;
-    int bookingNum;
+    int bookingNum = 0;
     double price = 7000;
     
     //menu
@@ -20,7 +20,7 @@ public class Funeral implements  Event{
 	public String[] getEventDetails() {
 		
         Scanner scn = new Scanner(System.in);
-        String[] funeralDeets = new String[5];
+        String[] funeralDeets = new String[7];
 
         System.out.println("When(Date & Time)");
         eventDateandTime = scn.nextLine();
@@ -46,6 +46,8 @@ public class Funeral implements  Event{
         funeralDeets[2] = eventAddress;
         funeralDeets[3] = String.valueOf(eventNumPeople);
         funeralDeets[4] = FuneralBouquet;
+        funeralDeets[5] = String.valueOf(price);
+
 
         return funeralDeets;
     }
