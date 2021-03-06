@@ -1,6 +1,8 @@
 package BusinessLogicLayer;
 import java.util.*;
 
+import PresentationLayer.ClientView;
+
 public class BirthDay implements Event{
     
     String eventType = "BirthDay";

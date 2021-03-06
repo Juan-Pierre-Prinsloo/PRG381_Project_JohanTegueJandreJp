@@ -5,3 +5,4 @@ Tomorrow,Papa Johns,35,, Menu: wings,Lobster Tail,banana split,null,null
 Yesterday,InMahPants,36,, Menu: Squirrels,Coranavirus,Bruh,1500.0,null 
 Funeral,15 Nov 2021,Graveyard,69, FuneralBouquet: ,5950.0,null 
 Wedding,ygvy,ibiu,400, Menu: ,ukgvuy,qwdwq,59500.0,1 
+Funeral,uyguy,dwdwed,2335, FuneralBouquet: ,5950.0,1 
