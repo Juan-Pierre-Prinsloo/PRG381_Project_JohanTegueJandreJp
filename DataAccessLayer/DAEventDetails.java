@@ -14,22 +14,22 @@ public class DAEventDetails {
 
         if (stArr[0] == "Wedding") {
 
-            String CombinedWedding = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] + "," +  stArr[7] + "," + stArr[8] + " \n";
+            String CombinedWedding = "Event Type: " + stArr[0] + ", Date: " + stArr[1] + ", Address: " + stArr[2] + ", Amount of People:" + stArr[3] +", Menu: Starters:"+ stArr[4] +", Main Course: " + stArr[5] +", Desert: " + stArr[6] + ", Price: " +  stArr[7] + ", Booking Number: " + stArr[8] + " \n";
             bwriter.write(CombinedWedding);
 
         } else if(stArr[0] == "BirthDay") {
 
-            String combinedBirthday = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] + "," +  stArr[7] + "," + stArr[8] +" \n";
+            String combinedBirthday = "Event Type: " + stArr[0] + ", Date: " + stArr[1] + ", Address: " + stArr[2] + ", Amount of People:" + stArr[3] +", Menu: Starters:"+ stArr[4] + ", Main Course: " + stArr[5] + ", Desert: " + stArr[6] + ", Price: " +  stArr[7] + ", Booking Number: " + stArr[8] +" \n";
             bwriter.write(combinedBirthday);
             
         }else if (stArr[0] == "Funeral"){
 
-            String CombinedFuneral = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", FuneralBouquet: "+ stArr[4] + "," +  stArr[5] + "," + stArr[6] +" \n";
+            String CombinedFuneral = "Event Type: " + stArr[0] + ", Date: " + stArr[1] + ", Address: " + stArr[2] + ", Amount of People:" + stArr[3] +", FuneralBouquet: " + stArr[4] + ", Price: " +  stArr[5] + ", Booking Number: " + stArr[6] +" \n";
             bwriter.write(CombinedFuneral);
             
         }else {
 
-            String CombinedOtherEvent = stArr[0] + "," + stArr[1] + "," + stArr[2] +"," + stArr[3] +", Menu: "+ stArr[4] +"," + stArr[5] +"," + stArr[6] + "," +  stArr[7] + "," + stArr[8] +" \n";
+            String CombinedOtherEvent = "Event Type: " + stArr[0] + ", Date: " + stArr[1] +", Address: " + stArr[2] + ", Amount of People:" + stArr[3] + ", Menu: Starters:" + stArr[4] + ", Main Course: " + stArr[5] + ", Desert: " + stArr[6] + ", Price: " +  stArr[7] + ", Booking Number: " + stArr[8] +" \n";
             bwriter.write(CombinedOtherEvent);
 
         }

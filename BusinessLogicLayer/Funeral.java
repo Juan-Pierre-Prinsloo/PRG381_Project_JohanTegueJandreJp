@@ -1,6 +1,8 @@
 package BusinessLogicLayer;
 import java.util.*;
 
+import PresentationLayer.ClientView;
+
 
 
 public class Funeral implements  Event{
@@ -41,14 +43,22 @@ public class Funeral implements  Event{
 
         scn.close();
 
-        funeralDeets[0] = eventType;
-        funeralDeets[1] = eventDateandTime;
-        funeralDeets[2] = eventAddress;
-        funeralDeets[3] = String.valueOf(eventNumPeople);
-        funeralDeets[4] = FuneralBouquet;
-        funeralDeets[5] = String.valueOf(price);
-        bookingNum = ClientView.eventIncrements;
-        funeralDeets[6] = String.valueOf(bookingNum);
+        if (condition) {
+
+            funeralDeets[0] = eventType;
+            funeralDeets[1] = eventDateandTime;
+            funeralDeets[2] = eventAddress;
+            funeralDeets[3] = String.valueOf(eventNumPeople);
+            funeralDeets[4] = FuneralBouquet;
+            funeralDeets[5] = String.valueOf(price);
+            bookingNum = ClientView.eventIncrements;
+            funeralDeets[6] = String.valueOf(bookingNum);
+
+            
+        } else {
+            System.out.println("");
+        }
+       
 
         return funeralDeets;
     }
