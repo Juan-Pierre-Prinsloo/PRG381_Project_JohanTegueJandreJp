@@ -9,6 +9,8 @@ public class OtherEvent implements Event {
     String eventDateandTime;
     String eventAddress;
     int eventNumPeople;
+    int bookingNum;
+    double price = 5000;
     
     //menu
     String starters;

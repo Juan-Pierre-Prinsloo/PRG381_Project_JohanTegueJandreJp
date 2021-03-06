@@ -8,6 +8,9 @@ public class BirthDay implements Event{
     String eventAddress;
     String eventTheme;
     int eventNumPeople;
+    int bookingNum;
+    double price = 1500;
+
     
     //menu
     String starters;
@@ -19,9 +22,7 @@ public class BirthDay implements Event{
     {
 		
         Scanner scn = new Scanner(System.in);
-        String[] birthdayDeets = new String[7];
-
-        
+        String[] birthdayDeets = new String[9];
 
         System.out.println("When(Date & Time)");
         eventDateandTime = scn.nextLine();
@@ -33,12 +34,14 @@ public class BirthDay implements Event{
 
         System.out.println("How many people?");
         eventNumPeople = scn.nextInt();
+        if (eventNumPeople > 40) {
+            price = price - (price * 0.15);
+        }
         birthdayDeets[2] = String.valueOf(eventNumPeople);
 
         System.out.println("Do you have a theme?(Yes/No");
         eventTheme = scn.nextLine();
         birthdayDeets[3] = eventTheme;
-
 
         System.out.println("==================================Menu:=============================");
         

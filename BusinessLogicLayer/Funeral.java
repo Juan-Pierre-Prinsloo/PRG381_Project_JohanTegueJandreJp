@@ -11,6 +11,8 @@ public class Funeral implements  Event{
     String eventDateandTime;
     String eventAddress;
     int eventNumPeople;
+    int bookingNum;
+    double price = 7000;
     
     //menu
     String FuneralBouquet;

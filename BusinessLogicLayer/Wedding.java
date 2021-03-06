@@ -6,6 +6,9 @@ public class Wedding implements Event{
     String eventDateandTime;
     String eventAddress;
     int eventNumPeople;
+    int bookingNum;
+    double price = 70000;
+    
     
     //menu
     String starters;
@@ -32,6 +35,9 @@ public class Wedding implements Event{
 
         System.out.println("How many people?");
         eventNumPeople = scn.nextInt();
+        if (eventNumPeople > 40) {
+            price = price - (price * 0.15);
+        }
         weddingDeets[3] = String.valueOf(eventNumPeople);
 
 
@@ -47,6 +53,8 @@ public class Wedding implements Event{
         System.out.println("What would you like for desert?");
         Desert = scn.nextLine();
         weddingDeets[6] = Desert;
+
+        
 
         scn.close();
 

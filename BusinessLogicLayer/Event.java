@@ -8,4 +8,6 @@ public interface Event {
    //Jandre Event Class
     String[] getEventDetails();
 
+    
+
 }
