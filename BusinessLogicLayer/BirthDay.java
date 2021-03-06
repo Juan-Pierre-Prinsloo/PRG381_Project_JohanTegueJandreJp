@@ -1,4 +1,6 @@
 package BusinessLogicLayer;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.*;
 
 import PresentationLayer.ClientView;
@@ -73,7 +75,7 @@ public class BirthDay implements Event{
     }
 
     @Override
-    public void validateDate(){
+    public void validateDate() throws FileNotFoundException{
         Scanner sc  = new Scanner(new File("EventDetails.txt"));
 
         while(sc.hasNext()){

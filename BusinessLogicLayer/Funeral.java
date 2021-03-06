@@ -1,4 +1,5 @@
 package BusinessLogicLayer;
+import java.io.*;
 import java.util.*;
 
 import PresentationLayer.ClientView;
@@ -16,7 +17,7 @@ public class Funeral implements  Event{
     String FuneralBouquet;
     
 	@Override
-	public String[] getEventDetails() {
+	public String[] getEventDetails() throws FileNotFoundException {
 		
         Scanner scn = new Scanner(System.in);
         String[] funeralDeets = new String[7];
@@ -58,7 +59,7 @@ public class Funeral implements  Event{
     }
 
     @Override
-    public void validateDate(){
+    public void validateDate() throws FileNotFoundException{
         Scanner sc  = new Scanner(new File("EventDetails.txt"));
 
         while(sc.hasNext()){
